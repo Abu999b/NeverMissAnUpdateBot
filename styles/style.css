@@ -1,0 +1,72 @@
+body {
+  background-color: var(--bg-color);
+}
+
+main {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.icon {
+  padding: 8px;
+  cursor: pointer;
+  filter: invert(79%) sepia(18%) saturate(148%) hue-rotate(158deg)
+    brightness(91%) contrast(88%);
+}
+
+.pin {
+  filter: invert(79%) sepia(18%) saturate(148%) hue-rotate(158deg)
+    brightness(91%) contrast(88%);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  padding: 10px 0px;
+  width: 195px;
+  background-color: var(--dropdown-color);
+  z-index: 10;
+  border-radius: 3px;
+  /* display: flex; */
+  flex-direction: column;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+  padding: 10px 16px;
+  color: var(--text-primary);
+}
+
+.dropdown-content a:hover {
+  background-color: var(--bg-color);
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+.redirect-button {
+  background-color: #25D366; /* WhatsApp green */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px; /* Space between the button and the profile image */
+}
+
+.redirect-button:hover {
+  background-color: #1ebe54; /* Darker green on hover */
+}
